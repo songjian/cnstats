@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from ast import And
 import numpy as np
 import pandas as pd
 import datetime
@@ -24,15 +25,15 @@ def stats_money_supply():
     r = requests.get(url,headers=header, verify=False)
     ret=r.json()
     if ret['returncode'] == 200 :
-        return ret['returndata']['datanodes'][1]
+        m2dict={}
+        nodes=ret['returndata']['datanodes']
+        for n in nodes:
+            if n['data']['hasdata'] == True:
+                if n['wds'][0]['valuecode'] == 'A0D0101': # m2
+                    m2dict[n['wds'][1]['valuecode']]=n['data']['data']
+        return m2dict
     return {}
 
-# m2dict={}
-# for node in stats_money_supply().datanodes:
-#     print(node)
-    # if node.data.hasdata == True and node.wds[0].valuecode == 'A0D0101':
-    #     m2dict[node['wds'][1]['valuecode']]=node['data']['data']
 
 
-# print(m2dict)
 print(stats_money_supply())
