@@ -27,10 +27,12 @@ def stats_money_supply():
     if ret['returncode'] == 200 :
         m2dict={}
         nodes=ret['returndata']['datanodes']
+        # print(nodes)
         for n in nodes:
             if n['data']['hasdata'] == True:
-                if n['wds'][0]['valuecode'] == 'A0D0101': # m2
-                    m2dict[n['wds'][1]['valuecode']]=n['data']['data']
+                # if n['wds'][0]['valuecode'] == 'A0D0101': # m2
+                data={'code': n['wds'][1]['valuecode'], 'value': n['data']['data']}
+                m2dict[n['wds'][0]['valuecode']]=data
         return m2dict
     return {}
 
