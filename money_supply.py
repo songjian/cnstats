@@ -25,18 +25,8 @@ def stats_money_supply():
     r = requests.get(url,headers=header, verify=False)
     ret=r.json()
     if ret['returncode'] == 200 :
-        m2dict=[]
-        nodes=ret['returndata']['datanodes']
-        # print(nodes)
-        for n in nodes:
+        for n in ret['returndata']['datanodes']:
             if n['data']['hasdata'] == True:
-                # if n['wds'][0]['valuecode'] == 'A0D0101': # m2
-                # data={'code': n['wds'][0]['valuecode'], 'date': n['wds'][1]['valuecode'], 'value': n['data']['data']}
-                m2dict.append([n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data']],)
-        return np.array(m2dict)
-    return {}
+                print(n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data'])
 
-
-
-d=stats_money_supply()
-print(d['A0D0101',:])
+stats_money_supply() 
