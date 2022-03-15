@@ -2,6 +2,12 @@
 
 数据源：http://www.stats.gov.cn/
 
+## PyPi安装
+
+```bash
+pip install cn-stats
+```
+
 ## 代码
 
 代码 | 说明
