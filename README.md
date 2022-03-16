@@ -16,7 +16,7 @@ from cnstats.stats import stats
 stats('A0D01', '202201')
 ```
 
-## 指标代码释义
+## 指标代码
 
 代码 | 释义
 ---|---
