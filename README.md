@@ -8,7 +8,7 @@
 pip install cn-stats
 ```
 
-## 导入cn-stats
+## cn-stats使用
 
 ```python
 from cnstats.stats import stats
