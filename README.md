@@ -8,6 +8,14 @@
 pip install cn-stats
 ```
 
+## 导入cn-stats
+
+```python
+from cnstats.stats import stats
+
+stats('A0D01', '202201')
+```
+
 ## 代码
 
 代码 | 说明
