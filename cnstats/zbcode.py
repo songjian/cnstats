@@ -21,3 +21,6 @@ def get_tree(id='zb'):
     for n in easyquery(id):
         print(n['id'], n['name'])
         if n['isParent']: get_tree(n['id'])
+
+if __name__ == '__main__':
+    get_tree('zb')
