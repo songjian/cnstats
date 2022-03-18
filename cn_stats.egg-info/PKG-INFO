@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cn-stats
-Version: 0.0.3
+Version: 0.0.4
 Summary: 获取中国国家统计局网站数据
 Home-page: https://github.com/songjian/touzi
 Author: sj
@@ -29,6 +29,18 @@ pip install cn-stats
 from cnstats.stats import stats
 
 stats('A0D01', '202201')
+```
+
+## 命令行中使用
+
+```bash
+$ python -m cnstats A0D01 202201
+A0D0101 202201 2431022.72
+A0D0102 202201 9.8
+A0D0103 202201 613859.35
+A0D0104 202201 -1.9
+A0D0105 202201 106188.87
+A0D0106 202201 18.5
 ```
 
 ## 指标代码

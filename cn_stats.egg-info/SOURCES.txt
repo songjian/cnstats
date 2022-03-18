@@ -6,5 +6,6 @@ cn_stats.egg-info/dependency_links.txt
 cn_stats.egg-info/requires.txt
 cn_stats.egg-info/top_level.txt
 cnstats/__init__.py
+cnstats/__main__.py
 cnstats/stats.py
 cnstats/zbcode.py
