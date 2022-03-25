@@ -1,3 +1,4 @@
+from os import stat
 import requests
 import time
 
@@ -14,12 +15,25 @@ header={
 def random_timestamp():
     return str(int(round(time.time() * 1000)))
 
-def stats(code, datestr):
-    url='https://data.stats.gov.cn/easyquery.htm?m=QueryData&dbcode=hgyd&rowcode=zb&colcode=sj&wds=[]&dfwds=[{"wdcode":"zb","valuecode":"'+code+'"},{"wdcode":"sj","valuecode":"'+datestr+'"}]&k1='+random_timestamp()
+def easyquery(code, datestr):
+    url='https://data.stats.gov.cn/easyquery.htm'
+    obj={'m': 'QueryData', 'dbcode': 'hgyd', 'rowcode': 'zb', 'colcode': 'sj',
+    'wds': '[]',
+    'dfwds': '[{"wdcode":"zb","valuecode":"'+code+'"},{"wdcode":"sj","valuecode":"'+datestr+'"}]',
+    'k1': random_timestamp()
+    }
     requests.packages.urllib3.disable_warnings()
-    r = requests.get(url,headers=header, verify=False)
-    ret=r.json()
+    r = requests.post(url, data=obj, headers=header, verify=False)
+    return r.json()
+
+def stats(code, datestr):
+    ret=easyquery(code, datestr)
     if ret['returncode'] == 200 :
         for n in ret['returndata']['datanodes']:
             if n['data']['hasdata'] == True:
                 print(n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data'])
+
+        # for n in ret['returndata']['wdnodes']:
+        #     if n['wdcode'] == 'zb':
+        #         for i in n['nodes']:
+        #             print(i['code'], i['cname'])
