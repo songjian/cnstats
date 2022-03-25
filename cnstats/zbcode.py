@@ -10,17 +10,17 @@ header={
         'Cookie':'_trs_uv=l0krufmy_6_30qm; JSESSIONID=JkGLaObMfWG3_P3_bNKa59cUydvE_nJDUpJOsskem4S-E-wgJeA7!-2135294552; u=1'
        }
 
-def easyquery(id='zb'):
+def easyquery(id='zb', dbcode='hgyd'):
     url='https://data.stats.gov.cn/easyquery.htm'
-    obj={'id': id, 'dbcode': 'hgyd', 'wdcode': 'zb', 'm': 'getTree'}
+    obj={'id': id, 'dbcode': dbcode, 'wdcode': 'zb', 'm': 'getTree'}
     requests.packages.urllib3.disable_warnings()
     r=requests.post(url, data=obj, headers=header, verify=False)
     return r.json()
 
-def get_tree(id='zb'):
+def get_tree(id='zb', dbcode='hgyd'):
     for n in easyquery(id):
         print(n['id'], n['name'])
-        if n['isParent']: get_tree(n['id'])
+        if n['isParent']: get_tree(n['id'], dbcode)
 
 if __name__ == '__main__':
     get_tree('zb')
