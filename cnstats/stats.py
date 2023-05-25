@@ -26,14 +26,18 @@ def easyquery(code, datestr):
     r = requests.post(url, data=obj, headers=header, verify=False)
     return r.json()
 
+
 def stats(code, datestr):
     ret=easyquery(code, datestr)
     if ret['returncode'] == 200 :
+        data_dict = {}
+        for n in ret['returndata']['wdnodes']:
+            if n['wdcode'] == 'zb':
+                for i in n['nodes']:
+                    data_dict[i['code']] = i['cname']
+
+        result = []
         for n in ret['returndata']['datanodes']:
             if n['data']['hasdata'] == True:
-                print(n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data'])
-
-        # for n in ret['returndata']['wdnodes']:
-        #     if n['wdcode'] == 'zb':
-        #         for i in n['nodes']:
-        #             print(i['code'], i['cname'])
+                result.append([data_dict[n['wds'][0]['valuecode']],n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data']])
+        return result
