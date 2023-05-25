@@ -13,4 +13,7 @@ if __name__ == '__main__':
     if args.tree == 'zb':
         get_tree(args.tree, args.dbcode)
     else:
-        stats(args.zbcode, args.date)
+        r=stats(args.zbcode, args.date)
+        for row in r:
+            print(' '.join(row))
+

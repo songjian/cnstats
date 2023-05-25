@@ -39,5 +39,5 @@ def stats(code, datestr):
         result = []
         for n in ret['returndata']['datanodes']:
             if n['data']['hasdata'] == True:
-                result.append([data_dict[n['wds'][0]['valuecode']],n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['data']])
+                result.append([data_dict[n['wds'][0]['valuecode']],n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['strdata']])
         return result
