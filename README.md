@@ -18,6 +18,24 @@ stats('A0D01', '202201')
 
 ## 命令行中使用
 
+使用帮助
+
+```bash
+python -m cnstats --help
+usage: cn-stats [-h] [--tree] [--dbcode [DBCODE]] [zbcode] [date]
+
+获取中国国家统计局网站数据Python包
+
+positional arguments:
+  zbcode             指标代码
+  date               查询日期
+
+options:
+  -h, --help         show this help message and exit
+  --tree             列出指标代码
+  --dbcode [DBCODE]  数据库代码
+```
+
 例：获取2022年1月货币供应量数据
 
 ```bash
