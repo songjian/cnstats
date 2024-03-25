@@ -1,43 +1,50 @@
-from os import stat
-import requests
-import time
+from .common import easyquery
 
-header={
-        'Accept-Encoding':'gzip, deflate, br',
-        'Connection':'keep-alive',
-        'Referer':'https://data.stats.gov.cn/easyquery.htm?cn=A01',
-        'Host':'data.stats.gov.cn',
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36',
-        'X-Requested-With':'XMLHttpRequest',
-        'Cookie':'_trs_uv=l0krufmy_6_30qm; JSESSIONID=JkGLaObMfWG3_P3_bNKa59cUydvE_nJDUpJOsskem4S-E-wgJeA7!-2135294552; u=1'
-       }
+def stats(zbcode, datestr, regcode=None):
+    dbcode='hgyd'
+    wds=[]
+    dfwds=[]
+    if zbcode:
+        dfwds.append({"wdcode":"zb","valuecode":zbcode})
 
-def random_timestamp():
-    return str(int(round(time.time() * 1000)))
+    if datestr:
+        dfwds.append({"wdcode":"sj","valuecode":datestr})
+    
+    if regcode:
+        wds.append({"wdcode":"reg","valuecode":regcode})
+        dbcode='fsyd'
 
-def easyquery(code, datestr):
-    url='https://data.stats.gov.cn/easyquery.htm'
-    obj={'m': 'QueryData', 'dbcode': 'hgyd', 'rowcode': 'zb', 'colcode': 'sj',
-    'wds': '[]',
-    'dfwds': '[{"wdcode":"zb","valuecode":"'+code+'"},{"wdcode":"sj","valuecode":"'+datestr+'"}]',
-    'k1': random_timestamp()
-    }
-    requests.packages.urllib3.disable_warnings()
-    r = requests.post(url, data=obj, headers=header, verify=False)
-    return r.json()
-
-
-def stats(code, datestr):
-    ret=easyquery(code, datestr)
+    ret=easyquery(dbcode=dbcode, dfwds=dfwds)
     if ret['returncode'] == 200 :
         data_dict = {}
         for n in ret['returndata']['wdnodes']:
             if n['wdcode'] == 'zb':
+                data_dict['zb'] = {}
                 for i in n['nodes']:
-                    data_dict[i['code']] = i['cname']
+                    data_dict['zb'][i['code']] = i['cname']
+            if n['wdcode'] == 'sj':
+                data_dict['sj'] = {}
+                for i in n['nodes']:
+                    data_dict['sj'][i['code']] = i['cname']
+            if n['wdcode'] == 'reg':
+                data_dict['reg'] = {}
+                for i in n['nodes']:
+                    data_dict['reg'][i['code']] = i['cname']
 
         result = []
         for n in ret['returndata']['datanodes']:
             if n['data']['hasdata'] == True:
-                result.append([data_dict[n['wds'][0]['valuecode']],n['wds'][0]['valuecode'],n['wds'][1]['valuecode'],n['data']['strdata']])
+                if len(data_dict) == 2:
+                    result.append(
+                        [data_dict['zb'][n['wds'][0]['valuecode']],
+                        n['wds'][0]['valuecode'],
+                        n['wds'][1]['valuecode'],
+                        n['data']['strdata']])
+                if len(data_dict) == 3:
+                    result.append(
+                        [data_dict['zb'][n['wds'][0]['valuecode']],
+                        n['wds'][0]['valuecode'],
+                        n['wds'][1]['valuecode'],
+                        n['wds'][2]['valuecode'],
+                        n['data']['strdata']])
         return result
