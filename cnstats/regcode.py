@@ -1,9 +1,8 @@
 from .common import easyquery
 
-def get_reg():
+def get_reg(dbcode='fsyd'):
     wds=[{"wdcode":"zb","valuecode":"A01010101"}]
-    dfwds=[]
-    ret = easyquery(m='QueryData', dbcode='fsyd', rowcode='reg', colcode='sj', wds=wds, dfwds=dfwds)
+    ret = easyquery(dbcode=dbcode, rowcode='reg', wds=wds)
     if ret['returncode'] == 200:
         return ret['returndata']['wdnodes'][1]['nodes']
         
