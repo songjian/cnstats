@@ -10,10 +10,24 @@ pip install cn-stats
 
 ## cn-stats使用
 
+例：查询宏观数据
+
 ```python
 from cnstats.stats import stats
 
-stats('A0D01', '202201')
+result = stats(zbcode='A010101', datestr='202201')
+
+print(result)
+```
+
+例：查询城市数据
+
+```python
+from cnstats.stats import stats
+
+result = stats(zbcode='A010101', datestr='202201', regcode='370200', dbcode='csyd')
+
+print(result)
 ```
 
 ## 命令行中使用
@@ -74,6 +88,14 @@ A0D0106 202112 7.7
 python -m cnstats A01010101 202112,202201 --regcode 110000
 居民消费价格指数(上年同月=100) A01010101 110000 202201 101.3
 居民消费价格指数(上年同月=100) A01010101 110000 202112 101.8
+```
+
+例：获取多个月的城市数据
+
+```bash
+python -m cnstats A010101 202112,202201 --regcode 370200
+城市居民消费价格指数(上年同月=100) A010101 110000 202201 101.3
+城市居民消费价格指数(上年同月=100) A010101 110000 202112 101.8
 ```
 
 ## 指标代码
