@@ -1,7 +1,6 @@
 from .common import easyquery
 
-def stats(zbcode, datestr, regcode=None):
-    dbcode='hgyd'
+def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
     wds=[]
     dfwds=[]
     if zbcode:
@@ -12,7 +11,6 @@ def stats(zbcode, datestr, regcode=None):
     
     if regcode:
         wds.append({"wdcode":"reg","valuecode":regcode})
-        dbcode='fsyd'
 
     ret=easyquery(dbcode=dbcode, dfwds=dfwds)
     if ret['returncode'] == 200 :

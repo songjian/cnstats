@@ -22,6 +22,13 @@ if __name__ == '__main__':
             for n in get_reg():
                 print(n['code'], n['name'])
     else:
-        r=stats(args.zbcode, args.date, args.regcode)
+        # 如果 regcode 有值，并且后4位是0, dbcode等于fsyd,否则dbcode是csyd
+        if args.regcode:
+            if args.regcode[-4:] == '0000':
+                args.dbcode='fsyd'
+            else:
+                args.dbcode='csyd'
+        # print(args)
+        r=stats(args.zbcode, args.date, args.regcode, args.dbcode)
         for row in r:
             print(' '.join(row))
