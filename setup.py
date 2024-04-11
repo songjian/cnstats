@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cn_stats",                                     # 包的分发名称，使用字母、数字、_、-
-    version="0.0.8",                                        # 版本号, 版本号规范：https://www.python.org/dev/peps/pep-0440/
+    version="0.0.9",                                        # 版本号, 版本号规范：https://www.python.org/dev/peps/pep-0440/
     author="sj",                                       # 作者名字
     author_email="724385768@qq.com",                      # 作者邮箱
     description="获取中国国家统计局网站数据。",                            # 包的简介描述
@@ -19,6 +19,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",           # 根据MIT许可证开源
         "Operating System :: OS Independent",               # 与操作系统无关
     ],
-    install_requires=['requests==2.28.1', 'pandas==1.4.1'],  # 依赖的包
+    install_requires=['requests>=2.28.1', 'pandas>=1.4.1'],  # 依赖的包
     python_requires='>=3'
 )
