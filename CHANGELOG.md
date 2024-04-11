@@ -6,7 +6,7 @@
 
 - Removed specific versions for pandas and requests dependencies
 
-## [0.0.8] - 2024-03-01
+## [0.0.8] - 2024-03-26
 
 ### Added
 
