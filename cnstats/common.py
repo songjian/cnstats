@@ -15,7 +15,7 @@ _header={
 def _random_timestamp():
     return str(int(round(time.time() * 1000)))
 
-def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], dfwds=[], id=None):
+def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], dfwds=[], id=None, wdcode=None):
     url='https://data.stats.gov.cn/easyquery.htm'
     obj={
         'm': m,
@@ -28,6 +28,7 @@ def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], 
         'h': '1',
         }
     if id: obj['id'] = id
+    if wdcode: obj['wdcode'] = wdcode
     requests.packages.urllib3.disable_warnings()
     r=requests.post(url, data=obj, headers=_header, verify=False)
     return r.json()
