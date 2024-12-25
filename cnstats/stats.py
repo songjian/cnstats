@@ -12,7 +12,7 @@ def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
     if regcode:
         wds.append({"wdcode":"reg","valuecode":regcode})
 
-    ret=easyquery(dbcode=dbcode, dfwds=dfwds)
+    ret=easyquery(dbcode=dbcode, wds=wds, dfwds=dfwds)
     if ret['returncode'] == 200 :
         data_dict = {}
         for n in ret['returndata']['wdnodes']:
