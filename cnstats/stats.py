@@ -1,6 +1,7 @@
 from .common import easyquery
+import pandas as pd
 
-def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
+def stats(zbcode, datestr, regcode=None, dbcode='hgyd', as_df=False):
     wds=[]
     dfwds=[]
     if zbcode:
@@ -54,5 +55,16 @@ def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
             else:
                 # [指标名称, 指标代码, 查询日期, 数值]
                 result.append([zb_name, zb_code, sj_code, data_val])
+                
+        if as_df:
+            if 'reg' in wd_map:
+                columns = ['指标名称', '指标代码', '地区名称', '地区代码', '查询日期', '数值']
+            else:
+                columns = ['指标名称', '指标代码', '查询日期', '数值']
+            df = pd.DataFrame(result, columns=columns)
+            if '数值' in df.columns:
+                df['数值'] = pd.to_numeric(df['数值'], errors='coerce')
+            return df
+            
         return result
-    return []
+    return pd.DataFrame() if as_df else []

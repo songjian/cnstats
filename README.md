@@ -36,6 +36,17 @@ result = stats(zbcode='A010101', datestr='202201', regcode='370200', dbcode='csy
 print(result)
 ```
 
+例：返回 DataFrame 格式数据
+
+```python
+from cnstats.stats import stats
+
+df = stats(zbcode='A010101', datestr='202201', as_df=True)
+
+# 这样可以直接使用 pandas 的功能进行后续分析和制图
+print(df.head())
+```
+
 ## 命令行中使用
 
 使用帮助

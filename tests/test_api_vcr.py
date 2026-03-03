@@ -54,3 +54,21 @@ def test_invalid_query():
     result = stats('INVALID_CODE', '2024')
     assert isinstance(result, list)
     assert len(result) == 0
+
+@pytest.mark.vcr
+def test_stats_as_df():
+    # 测试 as_df=True 参数返回 DataFrame
+    import pandas as pd
+    # 简单宏观数据
+    df1 = stats('A020101', '2024', as_df=True)
+    assert isinstance(df1, pd.DataFrame)
+    if not df1.empty:
+        assert '数值' in df1.columns
+        assert '地区代码' not in df1.columns
+        
+    # 带地区数据
+    df2 = stats('A010101', '2023', regcode='110000', dbcode='fsnd', as_df=True)
+    assert isinstance(df2, pd.DataFrame)
+    if not df2.empty:
+        assert '地区代码' in df2.columns
+        assert df2['地区代码'].iloc[0] == '110000'
