@@ -13,7 +13,7 @@ def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
         wds.append({"wdcode":"reg","valuecode":regcode})
 
     ret=easyquery(dbcode=dbcode, wds=wds, dfwds=dfwds)
-    if ret['returncode'] == 200 :
+    if ret['returncode'] == 200:
         data_dict = {}
         for n in ret['returndata']['wdnodes']:
             if n['wdcode'] == 'zb':
@@ -55,3 +55,4 @@ def stats(zbcode, datestr, regcode=None, dbcode='hgyd'):
                 # [指标名称, 指标代码, 查询日期, 数值]
                 result.append([zb_name, zb_code, sj_code, data_val])
         return result
+    return []

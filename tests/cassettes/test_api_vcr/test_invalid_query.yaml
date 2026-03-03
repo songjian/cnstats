@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=hgyd&rowcode=zb&colcode=sj&wds=%5B%5D&dfwds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22INVALID_CODE%22%7D%2C+%7B%22wdcode%22%3A+%22sj%22%2C+%22valuecode%22%3A+%222024%22%7D%5D&k1=1772507778656
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '224'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":501,\"returndata\":\"\u5BF9\u4E0D\u8D77\uFF0C\u672A\u80FD\u627E\u5230\u7B26\u5408\u67E5\u8BE2\u6761\u4EF6\u7684\u4FE1\u606F\u3002\"}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '88'
+      Date:
+      - Tue, 03 Mar 2026 03:16:18 GMT
+      Set-Cookie:
+      - JSESSIONID=YOWxsZBihimiZDiAx4LkoVNe0vtAqEUt3MaqtHkpBQyLNYBFcQwc!-591492109;
+        path=/; HttpOnly
+      - u=1
+      WZWS-RAY:
+      - 1129-1772536578.925-w-waf10zzst-w-waf09zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - c30a3a29-563f-45e5-8c12-3d2ea33e9b0a-00e63877
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=fsnd&rowcode=zb&colcode=sj&wds=%5B%7B%22wdcode%22%3A+%22reg%22%2C+%22valuecode%22%3A+%22110000%22%7D%5D&dfwds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22A010101%22%7D%2C+%7B%22wdcode%22%3A+%22sj%22%2C+%22valuecode%22%3A+%222023%22%7D%5D&k1=1772507819019
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '285'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":200,\"returndata\":{\"datanodes\":[{\"code\":\"zb.A010101_reg.110000_sj.2023\",\"data\":{\"data\":0.0,\"dotcount\":0,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A010101\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"2023\",\"wdcode\":\"sj\"}]}],\"freshsort\":0,\"hasdatacount\":0,\"wdnodes\":[{\"nodes\":[{\"cname\":\"\u5730\u7EA7\u533A\u5212\u6570\",\"code\":\"A010101\",\"dotcount\":0,\"exp\":\"\u6307\u5730\u7EA7\u884C\u653F\u5355\u4F4D\u5373\u4ECB\u4E8E\u7701\u7EA7\u548C\u53BF\u7EA7\u4E4B\u95F4\u7684\u4E00\u7EA7\u5730\u65B9\u884C\u653F\u533A\u57DF\u7684\u4E2A\u6570\uFF0C\u5305\u62EC\u5730\u533A\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5730\u7EA7\u533A\u5212\u6570\",\"nodesort\":\"1\",\"sortcode\":2,\"tag\":\"\",\"unit\":\"\u4E2A\"}],\"wdcode\":\"zb\",\"wdname\":\"\u6307\u6807\"},{\"nodes\":[{\"cname\":\"\u5317\u4EAC\u5E02\",\"code\":\"110000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5317\u4EAC\u5E02\",\"nodesort\":\"1\",\"sortcode\":1,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"reg\",\"wdname\":\"\u5730\u533A\"},{\"nodes\":[{\"cname\":\"2023\u5E74\",\"code\":\"2023\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2023\u5E74\",\"nodesort\":\"1\",\"sortcode\":5,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"sj\",\"wdname\":\"\u65F6\u95F4\"}]}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1022'
+      Date:
+      - Tue, 03 Mar 2026 03:16:59 GMT
+      Set-Cookie:
+      - JSESSIONID=VUuxsXbu5xllmU4tFDyxYtuoS6byAC052BXH1VtRWnvjk1ilYj7l!2021152991;
+        path=/; HttpOnly
+      - u=6
+      WZWS-RAY:
+      - 1129-1772536619.211-w-waf10zzst-waf02zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - d44be32e-64ff-4e7b-8430-87cedfcdf56e-00e7e082
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

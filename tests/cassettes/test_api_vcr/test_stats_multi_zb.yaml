@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=hgyd&rowcode=zb&colcode=sj&wds=%5B%5D&dfwds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22A0D01%22%7D%2C+%7B%22wdcode%22%3A+%22sj%22%2C+%22valuecode%22%3A+%22202201%22%7D%5D&k1=1772508085213
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '219'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":200,\"returndata\":{\"datanodes\":[{\"code\":\"zb.A0D0101_sj.202201\",\"data\":{\"data\":2431022.72,\"dotcount\":2,\"hasdata\":true,\"strdata\":\"2431022.72\"},\"wds\":[{\"valuecode\":\"A0D0101\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0102_sj.202201\",\"data\":{\"data\":9.8,\"dotcount\":1,\"hasdata\":true,\"strdata\":\"9.8\"},\"wds\":[{\"valuecode\":\"A0D0102\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0103_sj.202201\",\"data\":{\"data\":613859.35,\"dotcount\":2,\"hasdata\":true,\"strdata\":\"613859.35\"},\"wds\":[{\"valuecode\":\"A0D0103\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0104_sj.202201\",\"data\":{\"data\":-1.9,\"dotcount\":1,\"hasdata\":true,\"strdata\":\"-1.9\"},\"wds\":[{\"valuecode\":\"A0D0104\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0105_sj.202201\",\"data\":{\"data\":106188.87,\"dotcount\":2,\"hasdata\":true,\"strdata\":\"106188.87\"},\"wds\":[{\"valuecode\":\"A0D0105\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0106_sj.202201\",\"data\":{\"data\":18.5,\"dotcount\":1,\"hasdata\":true,\"strdata\":\"18.5\"},\"wds\":[{\"valuecode\":\"A0D0106\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]}],\"freshsort\":0,\"hasdatacount\":6,\"wdnodes\":[{\"nodes\":[{\"cname\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"code\":\"A0D0101\",\"dotcount\":2,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\u8D27\u5E01\u4F9B\u5E94\u91CF\u5DF2\u5305\u542B\u4F4F\u623F\u516C\u79EF\u91D1\u4E2D\u5FC3\u5B58\u6B3E\u548C\u975E\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u5728\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u7684\u5B58\u6B3E\u30022001\u5E746\u6708\u8D77\uFF0C\u5C06\u8BC1\u5238\u516C\u53F8\u5BA2\u6237\u4FDD\u8BC1\u91D1\u8BA1\u5165\u8D27\u5E01\u4F9B\u5E94\u91CF(M2)\uFF0C\u542B\u5728\u5176\u4ED6\u5B58\u6B3E\u9879\u5185\u3002\",\"name\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"nodesort\":\"1\",\"sortcode\":15328,\"tag\":\"\",\"unit\":\"\u4EBF\u5143\"},{\"cname\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"code\":\"A0D0102\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\u8D27\u5E01\u4F9B\u5E94\u91CF\u5DF2\u5305\u542B\u4F4F\u623F\u516C\u79EF\u91D1\u4E2D\u5FC3\u5B58\u6B3E\u548C\u975E\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u5728\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u7684\u5B58\u6B3E\u30022001\u5E746\u6708\u8D77\uFF0C\u5C06\u8BC1\u5238\u516C\u53F8\u5BA2\u6237\u4FDD\u8BC1\u91D1\u8BA1\u5165\u8D27\u5E01\u4F9B\u5E94\u91CF(M2)\uFF0C\u542B\u5728\u5176\u4ED6\u5B58\u6B3E\u9879\u5185\u3002\",\"name\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"nodesort\":\"1\",\"sortcode\":15329,\"tag\":\"\",\"unit\":\"%\"},{\"cname\":\"\u8D27\u5E01(M1)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"code\":\"A0D0103\",\"dotcount\":2,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u8D27\u5E01(M1)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"nodesort\":\"1\",\"sortcode\":15330,\"tag\":\"\",\"unit\":\"\u4EBF\u5143\"},{\"cname\":\"\u8D27\u5E01(M1)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"code\":\"A0D0104\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u8D27\u5E01(M1)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"nodesort\":\"1\",\"sortcode\":15331,\"tag\":\"\",\"unit\":\"%\"},{\"cname\":\"\u6D41\u901A\u4E2D\u73B0\u91D1(M0)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"code\":\"A0D0105\",\"dotcount\":2,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6D41\u901A\u4E2D\u73B0\u91D1(M0)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"nodesort\":\"1\",\"sortcode\":15332,\"tag\":\"\",\"unit\":\"\u4EBF\u5143\"},{\"cname\":\"\u6D41\u901A\u4E2D\u73B0\u91D1(M0)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"code\":\"A0D0106\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6D41\u901A\u4E2D\u73B0\u91D1(M0)\u4F9B\u5E94\u91CF_\u540C\u6BD4\u589E\u957F\",\"nodesort\":\"1\",\"sortcode\":15333,\"tag\":\"\",\"unit\":\"%\"}],\"wdcode\":\"zb\",\"wdname\":\"\u6307\u6807\"},{\"nodes\":[{\"cname\":\"2022\u5E741\u6708\",\"code\":\"202201\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2022\u5E741\u6708\",\"nodesort\":\"1\",\"sortcode\":51,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"sj\",\"wdname\":\"\u65F6\u95F4\"}]}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3209'
+      Date:
+      - Tue, 03 Mar 2026 03:21:25 GMT
+      Set-Cookie:
+      - JSESSIONID=hqGxtYb0S3x08CUKUff-tdOs9Px2utc_LTwhe1HvuKPHKf-1GAon!2021152991;
+        path=/; HttpOnly
+      - u=6
+      WZWS-RAY:
+      - 1129-1772536885.483-w-waf10zzst-w-waf09zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - d44be32e-64ff-4e7b-8430-87cedfcdf56e-00e7e589
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

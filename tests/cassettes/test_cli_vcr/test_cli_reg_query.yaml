@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=fsyd&rowcode=zb&colcode=sj&wds=%5B%7B%22wdcode%22%3A+%22reg%22%2C+%22valuecode%22%3A+%22110000%22%7D%5D&dfwds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22A010101%22%7D%2C+%7B%22wdcode%22%3A+%22sj%22%2C+%22valuecode%22%3A+%22202312%22%7D%5D&k1=1772508085868
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '287'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":200,\"returndata\":{\"datanodes\":[{\"code\":\"zb.A01010101_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010101\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010102_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010102\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010103_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010103\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010104_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010104\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010105_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010105\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010106_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010106\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010107_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010107\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010108_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010108\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A01010109_reg.110000_sj.202312\",\"data\":{\"data\":0.0,\"dotcount\":1,\"hasdata\":false,\"strdata\":\"\"},\"wds\":[{\"valuecode\":\"A01010109\",\"wdcode\":\"zb\"},{\"valuecode\":\"110000\",\"wdcode\":\"reg\"},{\"valuecode\":\"202312\",\"wdcode\":\"sj\"}]}],\"freshsort\":0,\"hasdatacount\":0,\"wdnodes\":[{\"nodes\":[{\"cname\":\"\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010101\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":13,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u98DF\u54C1\u70DF\u9152\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010102\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u98DF\u54C1\u70DF\u9152\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":14,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u8863\u7740\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010103\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u8863\u7740\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":15,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5C45\u4F4F\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010104\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5C45\u4F4F\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":16,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u751F\u6D3B\u7528\u54C1\u53CA\u670D\u52A1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010105\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u751F\u6D3B\u7528\u54C1\u53CA\u670D\u52A1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":17,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u4EA4\u901A\u901A\u4FE1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010106\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u4EA4\u901A\u901A\u4FE1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":18,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6559\u80B2\u6587\u5316\u5A31\u4E50\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010107\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6559\u80B2\u6587\u5316\u5A31\u4E50\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":19,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u533B\u7597\u4FDD\u5065\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010108\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u533B\u7597\u4FDD\u5065\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":20,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5176\u4ED6\u7528\u54C1\u548C\u670D\u52A1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"code\":\"A01010109\",\"dotcount\":1,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5176\u4ED6\u7528\u54C1\u548C\u670D\u52A1\u7C7B\u5C45\u6C11\u6D88\u8D39\u4EF7\u683C\u6307\u6570(\u4E0A\u5E74\u540C\u6708=100)\",\"nodesort\":\"1\",\"sortcode\":21,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"zb\",\"wdname\":\"\u6307\u6807\"},{\"nodes\":[{\"cname\":\"\u5317\u4EAC\u5E02\",\"code\":\"110000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5317\u4EAC\u5E02\",\"nodesort\":\"1\",\"sortcode\":1,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"reg\",\"wdname\":\"\u5730\u533A\"},{\"nodes\":[{\"cname\":\"2023\u5E7412\u6708\",\"code\":\"202312\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2023\u5E7412\u6708\",\"nodesort\":\"1\",\"sortcode\":28,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"sj\",\"wdname\":\"\u65F6\u95F4\"}]}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4899'
+      Date:
+      - Tue, 03 Mar 2026 03:21:26 GMT
+      Set-Cookie:
+      - JSESSIONID=_EKxtkDxf9p-gSnp7BFauwsKyO6GEjTJ4J4jvx2Z0fjExEkHU0Mb!-591492109;
+        path=/; HttpOnly
+      - u=1
+      WZWS-RAY:
+      - 1129-1772536886.273-w-waf10zzst-waf02zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - c30a3a29-563f-45e5-8c12-3d2ea33e9b0a-00e63e19
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

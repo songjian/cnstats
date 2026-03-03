@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=csnd&rowcode=reg&colcode=sj&wds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22A01010101%22%7D%5D&dfwds=%5B%5D&k1=1772508087727
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '155'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":200,\"returndata\":{\"datanodes\":[],\"freshsort\":0,\"hasdatacount\":0,\"wdnodes\":[{\"nodes\":[null],\"wdcode\":\"zb\",\"wdname\":\"\u6307\u6807\"},{\"nodes\":[{\"cname\":\"\u5317\u4EAC\",\"code\":\"110000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5317\u4EAC\",\"nodesort\":\"1\",\"sortcode\":1,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5929\u6D25\",\"code\":\"120000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5929\u6D25\",\"nodesort\":\"1\",\"sortcode\":2,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u77F3\u5BB6\u5E84\",\"code\":\"130100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u77F3\u5BB6\u5E84\",\"nodesort\":\"1\",\"sortcode\":3,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u592A\u539F\",\"code\":\"140100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u592A\u539F\",\"nodesort\":\"1\",\"sortcode\":4,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u547C\u548C\u6D69\u7279\",\"code\":\"150100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u547C\u548C\u6D69\u7279\",\"nodesort\":\"1\",\"sortcode\":5,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6C88\u9633\",\"code\":\"210100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6C88\u9633\",\"nodesort\":\"1\",\"sortcode\":6,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5927\u8FDE\",\"code\":\"210200\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5927\u8FDE\",\"nodesort\":\"1\",\"sortcode\":7,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u957F\u6625\",\"code\":\"220100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u957F\u6625\",\"nodesort\":\"1\",\"sortcode\":8,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u54C8\u5C14\u6EE8\",\"code\":\"230100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u54C8\u5C14\u6EE8\",\"nodesort\":\"1\",\"sortcode\":9,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u4E0A\u6D77\",\"code\":\"310000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u4E0A\u6D77\",\"nodesort\":\"1\",\"sortcode\":10,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5357\u4EAC\",\"code\":\"320100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5357\u4EAC\",\"nodesort\":\"1\",\"sortcode\":11,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u676D\u5DDE\",\"code\":\"330100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u676D\u5DDE\",\"nodesort\":\"1\",\"sortcode\":12,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5B81\u6CE2\",\"code\":\"330200\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5B81\u6CE2\",\"nodesort\":\"1\",\"sortcode\":13,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5408\u80A5\",\"code\":\"340100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5408\u80A5\",\"nodesort\":\"1\",\"sortcode\":14,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u798F\u5DDE\",\"code\":\"350100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u798F\u5DDE\",\"nodesort\":\"1\",\"sortcode\":15,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u53A6\u95E8\",\"code\":\"350200\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u53A6\u95E8\",\"nodesort\":\"1\",\"sortcode\":16,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5357\u660C\",\"code\":\"360100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5357\u660C\",\"nodesort\":\"1\",\"sortcode\":17,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6D4E\u5357\",\"code\":\"370100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6D4E\u5357\",\"nodesort\":\"1\",\"sortcode\":18,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u9752\u5C9B\",\"code\":\"370200\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u9752\u5C9B\",\"nodesort\":\"1\",\"sortcode\":19,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u90D1\u5DDE\",\"code\":\"410100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u90D1\u5DDE\",\"nodesort\":\"1\",\"sortcode\":20,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6B66\u6C49\",\"code\":\"420100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6B66\u6C49\",\"nodesort\":\"1\",\"sortcode\":21,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u957F\u6C99\",\"code\":\"430100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u957F\u6C99\",\"nodesort\":\"1\",\"sortcode\":22,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5E7F\u5DDE\",\"code\":\"440100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5E7F\u5DDE\",\"nodesort\":\"1\",\"sortcode\":23,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6DF1\u5733\",\"code\":\"440300\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6DF1\u5733\",\"nodesort\":\"1\",\"sortcode\":24,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5357\u5B81\",\"code\":\"450100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5357\u5B81\",\"nodesort\":\"1\",\"sortcode\":25,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6D77\u53E3\",\"code\":\"460100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6D77\u53E3\",\"nodesort\":\"1\",\"sortcode\":26,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u91CD\u5E86\",\"code\":\"500000\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u91CD\u5E86\",\"nodesort\":\"1\",\"sortcode\":27,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6210\u90FD\",\"code\":\"510100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6210\u90FD\",\"nodesort\":\"1\",\"sortcode\":28,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u8D35\u9633\",\"code\":\"520100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u8D35\u9633\",\"nodesort\":\"1\",\"sortcode\":29,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u6606\u660E\",\"code\":\"530100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u6606\u660E\",\"nodesort\":\"1\",\"sortcode\":30,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u62C9\u8428\",\"code\":\"540100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u62C9\u8428\",\"nodesort\":\"1\",\"sortcode\":31,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u897F\u5B89\",\"code\":\"610100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u897F\u5B89\",\"nodesort\":\"1\",\"sortcode\":32,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u5170\u5DDE\",\"code\":\"620100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u5170\u5DDE\",\"nodesort\":\"1\",\"sortcode\":33,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u897F\u5B81\",\"code\":\"630100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u897F\u5B81\",\"nodesort\":\"1\",\"sortcode\":34,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u94F6\u5DDD\",\"code\":\"640100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u94F6\u5DDD\",\"nodesort\":\"1\",\"sortcode\":35,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"\u4E4C\u9C81\u6728\u9F50\",\"code\":\"650100\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"\u4E4C\u9C81\u6728\u9F50\",\"nodesort\":\"1\",\"sortcode\":36,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"reg\",\"wdname\":\"\u5730\u533A\"},{\"nodes\":[{\"cname\":\"2025\u5E74\",\"code\":\"2025\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2025\u5E74\",\"nodesort\":\"1\",\"sortcode\":3,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"2024\u5E74\",\"code\":\"2024\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2024\u5E74\",\"nodesort\":\"1\",\"sortcode\":4,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"2023\u5E74\",\"code\":\"2023\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2023\u5E74\",\"nodesort\":\"1\",\"sortcode\":5,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"2022\u5E74\",\"code\":\"2022\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2022\u5E74\",\"nodesort\":\"1\",\"sortcode\":6,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"2021\u5E74\",\"code\":\"2021\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2021\u5E74\",\"nodesort\":\"1\",\"sortcode\":7,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"sj\",\"wdname\":\"\u65F6\u95F4\"}]}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6401'
+      Date:
+      - Tue, 03 Mar 2026 03:21:27 GMT
+      Set-Cookie:
+      - JSESSIONID=uE6xtZC9JBghlWZKOBTXv9-a7btnD1N7WWfPbLdeXPlhFYPgntNV!-980161328;
+        path=/; HttpOnly
+      - u=5
+      WZWS-RAY:
+      - 1129-1772536888.024-w-waf10zzst-w-waf06zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - 85d47d66-f721-4553-a41d-2dc7ca70af03-00e1d552
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

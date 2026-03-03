@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: m=QueryData&dbcode=hgyd&rowcode=zb&colcode=sj&wds=%5B%5D&dfwds=%5B%7B%22wdcode%22%3A+%22zb%22%2C+%22valuecode%22%3A+%22A0D0101%22%7D%2C+%7B%22wdcode%22%3A+%22sj%22%2C+%22valuecode%22%3A+%22202112%2C202201%22%7D%5D&k1=1772508084739
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - data.stats.gov.cn
+      Referer:
+      - https://data.stats.gov.cn/easyquery.htm?cn=A01
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36
+      X-Requested-With:
+      - XMLHttpRequest
+    method: POST
+    uri: https://data.stats.gov.cn/easyquery.htm
+  response:
+    body:
+      string: "{\"returncode\":200,\"returndata\":{\"datanodes\":[{\"code\":\"zb.A0D0101_sj.202201\",\"data\":{\"data\":2431022.72,\"dotcount\":2,\"hasdata\":true,\"strdata\":\"2431022.72\"},\"wds\":[{\"valuecode\":\"A0D0101\",\"wdcode\":\"zb\"},{\"valuecode\":\"202201\",\"wdcode\":\"sj\"}]},{\"code\":\"zb.A0D0101_sj.202112\",\"data\":{\"data\":2382899.56,\"dotcount\":2,\"hasdata\":true,\"strdata\":\"2382899.56\"},\"wds\":[{\"valuecode\":\"A0D0101\",\"wdcode\":\"zb\"},{\"valuecode\":\"202112\",\"wdcode\":\"sj\"}]}],\"freshsort\":0,\"hasdatacount\":2,\"wdnodes\":[{\"nodes\":[{\"cname\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"code\":\"A0D0101\",\"dotcount\":2,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\u8D27\u5E01\u4F9B\u5E94\u91CF\u5DF2\u5305\u542B\u4F4F\u623F\u516C\u79EF\u91D1\u4E2D\u5FC3\u5B58\u6B3E\u548C\u975E\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u5728\u5B58\u6B3E\u7C7B\u91D1\u878D\u673A\u6784\u7684\u5B58\u6B3E\u30022001\u5E746\u6708\u8D77\uFF0C\u5C06\u8BC1\u5238\u516C\u53F8\u5BA2\u6237\u4FDD\u8BC1\u91D1\u8BA1\u5165\u8D27\u5E01\u4F9B\u5E94\u91CF(M2)\uFF0C\u542B\u5728\u5176\u4ED6\u5B58\u6B3E\u9879\u5185\u3002\",\"name\":\"\u8D27\u5E01\u548C\u51C6\u8D27\u5E01(M2)\u4F9B\u5E94\u91CF_\u671F\u672B\u503C\",\"nodesort\":\"1\",\"sortcode\":15328,\"tag\":\"\",\"unit\":\"\u4EBF\u5143\"}],\"wdcode\":\"zb\",\"wdname\":\"\u6307\u6807\"},{\"nodes\":[{\"cname\":\"2022\u5E741\u6708\",\"code\":\"202201\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2022\u5E741\u6708\",\"nodesort\":\"1\",\"sortcode\":51,\"tag\":\"\",\"unit\":\"\"},{\"cname\":\"2021\u5E7412\u6708\",\"code\":\"202112\",\"dotcount\":4,\"exp\":\"\",\"ifshowcode\":false,\"memo\":\"\",\"name\":\"2021\u5E7412\u6708\",\"nodesort\":\"1\",\"sortcode\":52,\"tag\":\"\",\"unit\":\"\"}],\"wdcode\":\"sj\",\"wdname\":\"\u65F6\u95F4\"}]}}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1332'
+      Date:
+      - Tue, 03 Mar 2026 03:21:24 GMT
+      Set-Cookie:
+      - JSESSIONID=_oextjwsyeytNJx7N4vnyYEPq5fpmzlvbsB8EO2da-Fyk-XO-Cnr!-1532326908;
+        path=/; HttpOnly
+      - u=2
+      WZWS-RAY:
+      - 1129-1772536885.05-w-waf10zzst-w-waf09zzst
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-ORACLE-DMS-ECID:
+      - 701a2ee2-3bfc-45ae-be5e-13d3e693f426-00e5c863
+      X-ORACLE-DMS-RID:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1
