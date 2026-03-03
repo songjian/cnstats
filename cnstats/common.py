@@ -14,8 +14,10 @@ _header={
 def _random_timestamp():
     return str(int(round(time.time() * 1000)))
 
-def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], dfwds=[], id=None, wdcode=None):
+def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], dfwds=[], id=None, wdcode=None, h=None):
     url='https://data.stats.gov.cn/easyquery.htm'
+    if h is not None:
+        url += f'?h={h}'
     obj={
         'm': m,
         'dbcode': dbcode,

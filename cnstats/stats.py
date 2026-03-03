@@ -1,7 +1,7 @@
 from .common import easyquery
 import pandas as pd
 
-def stats(zbcode, datestr, regcode=None, dbcode='hgyd', as_df=False):
+def stats(zbcode, datestr, regcode=None, dbcode='hgyd', as_df=False, h=None):
     wds=[]
     dfwds=[]
     if zbcode:
@@ -13,7 +13,7 @@ def stats(zbcode, datestr, regcode=None, dbcode='hgyd', as_df=False):
     if regcode:
         wds.append({"wdcode":"reg","valuecode":regcode})
 
-    ret=easyquery(dbcode=dbcode, wds=wds, dfwds=dfwds)
+    ret=easyquery(dbcode=dbcode, wds=wds, dfwds=dfwds, h=h)
     if ret['returncode'] == 200:
         data_dict = {}
         for n in ret['returndata']['wdnodes']:
