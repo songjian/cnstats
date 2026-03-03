@@ -2,6 +2,7 @@ from .stats import stats
 from .zbcode import get_tree
 from .regcode import get_reg
 import argparse
+from tabulate import tabulate
 
 def main():
     parser=argparse.ArgumentParser(prog='cn-stats',description='获取中国国家统计局网站数据Python包')
@@ -30,8 +31,8 @@ def main():
                 args.dbcode='csyd'
         # print(args)
         r=stats(args.zbcode, args.date, args.regcode, args.dbcode)
-        for row in r:
-            print(' '.join(row))
+        headers = ["指标名称", "指标代码", "查询日期", "数值"]
+        print(tabulate(r, headers=headers, tablefmt="pretty"))
 
 if __name__ == '__main__':
     main()

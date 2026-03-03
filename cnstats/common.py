@@ -30,5 +30,7 @@ def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], 
     if id: obj['id'] = id
     if wdcode: obj['wdcode'] = wdcode
     requests.packages.urllib3.disable_warnings()
-    r=requests.post(url, data=obj, headers=_header, verify=False)
+    session = requests.Session()
+    session.trust_env = False
+    r = session.post(url, data=obj, headers=_header, verify=False)
     return r.json()

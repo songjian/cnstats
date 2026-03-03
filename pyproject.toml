@@ -1,6 +1,6 @@
 [project]
 name = "cn-stats"
-version = "0.1.0"
+version = "0.1.1"
 description = "获取中国国家统计局网站数据。"
 readme = "README.md"
 authors = [
@@ -11,6 +11,8 @@ dependencies = [
     "requests>=2.31.0",
     "pandas>=1.4.1",
     "urllib3>=2.0.0",
+    "tabulate>=0.9.0",
+    "wcwidth>=0.6.0",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
