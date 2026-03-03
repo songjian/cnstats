@@ -1,6 +1,6 @@
 [project]
 name = "cn-stats"
-version = "0.1.2"
+version = "0.1.3"
 description = "获取中国国家统计局网站数据。"
 readme = "README.md"
 authors = [

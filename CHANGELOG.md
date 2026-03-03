@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.3] - 2026-03-03
+
+### Added
+- `stats` 函数新增 `as_df=False` 参数，原生支持以 `pandas.DataFrame` 格式返回数据。
+
 ## [0.1.2] - 2026-03-03
 
 ### Fixed
@@ -17,7 +22,6 @@
 - 迁移项目管理到 `uv`，使用 `pyproject.toml` 替代 `setup.py`。
 - 命令行工具支持表格化输出 (使用 `tabulate` 和 `wcwidth`)。
 - 增加 `pytest` 测试框架及初步冒烟测试。
-- \`stats\` 函数新增 \`as_df=False\` 参数，原生支持以 `pandas.DataFrame` 格式返回数据。
 
 ## 2025-05-24
 
