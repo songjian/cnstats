@@ -1,0 +1,37 @@
+[project]
+name = "cn-stats"
+version = "0.1.0"
+description = "获取中国国家统计局网站数据。"
+readme = "README.md"
+authors = [
+    { name = "sj", email = "724385768@qq.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.31.0",
+    "pandas>=1.4.1",
+    "urllib3>=2.0.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/songjian/cnstats"
+
+[project.scripts]
+cnstats = "cnstats.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cnstats"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]

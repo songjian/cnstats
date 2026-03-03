@@ -3,7 +3,7 @@ from .zbcode import get_tree
 from .regcode import get_reg
 import argparse
 
-if __name__ == '__main__':
+def main():
     parser=argparse.ArgumentParser(prog='cn-stats',description='获取中国国家统计局网站数据Python包')
     parser.add_argument('--tree', action='store_const', const='zb', help='列出指标代码')
     parser.add_argument('--list-regcode', action='store_const', const='list_regcode', help='列出地区代码, 默认列出分省地区代码，列出主要城市代码添加 --dbcode csnd 参数')
@@ -32,3 +32,6 @@ if __name__ == '__main__':
         r=stats(args.zbcode, args.date, args.regcode, args.dbcode)
         for row in r:
             print(' '.join(row))
+
+if __name__ == '__main__':
+    main()
