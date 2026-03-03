@@ -9,7 +9,6 @@ _header={
         'Host':'data.stats.gov.cn',
         'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.36',
         'X-Requested-With':'XMLHttpRequest',
-        'Cookie':'_trs_uv=l0krufmy_6_30qm; JSESSIONID=JkGLaObMfWG3_P3_bNKa59cUydvE_nJDUpJOsskem4S-E-wgJeA7!-2135294552; u=1'
        }
 
 def _random_timestamp():
@@ -25,7 +24,6 @@ def easyquery(m='QueryData', dbcode='hgyd', rowcode='zb', colcode='sj', wds=[], 
         'wds': json.dumps(wds),
         'dfwds': json.dumps(dfwds),
         'k1': _random_timestamp(),
-        'h': '1',
         }
     if id: obj['id'] = id
     if wdcode: obj['wdcode'] = wdcode
